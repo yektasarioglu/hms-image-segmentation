@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.huawei.agconnect'  // HUAWEI AGConnect Gradle plugin
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.yektasarioglu.imagesegmentation"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // Android
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    //  Android Image Picker
+    implementation 'com.github.esafirm.android-image-picker:imagepicker:2.4.1'
+
+    // Before After Slider
+    implementation 'com.github.blackfox94:before_after_slider:701e3d5861'
+
+    // Huawei
+    implementation 'com.huawei.hms:ml-computer-vision-segmentation:2.0.4.300' // Import the base SDK.
+    implementation 'com.huawei.hms:ml-computer-vision-image-segmentation-body-model:2.0.4.300' // Import the human body segmentation model package.
+
+    // Kotlin Standard Library
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Material Design
+    implementation 'com.google.android.material:material:1.3.0-alpha04'
+
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.1"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.1"
+
+    // Permissions Dispatcher
+    implementation "org.permissionsdispatcher:permissionsdispatcher:4.8.0"
+    kapt "org.permissionsdispatcher:permissionsdispatcher-processor:4.8.0"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/imageSegmentationListFragment">
+
+    <fragment
+        android:id="@+id/imageSegmentationListFragment"
+        android:name="com.yektasarioglu.imagesegmentation.ui.ImageSegmentationListFragment"
+        android:label="ImageSegmentationListFragment">
+        <action
+            android:id="@+id/action_imageSegmentationListFragment_to_staticHumanBodySegmentationFragment"
+            app:destination="@id/staticHumanBodySegmentationFragment" />
+        <action
+            android:id="@+id/action_imageSegmentationListFragment_to_streamHumanBodySegmentationFragment"
+            app:destination="@id/streamHumanBodySegmentationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/staticHumanBodySegmentationFragment"
+        android:name="com.yektasarioglu.imagesegmentation.ui.StaticHumanBodySegmentationFragment"
+        android:label="StaticHumanBodySegmentationFragment" />
+    <fragment
+        android:id="@+id/streamHumanBodySegmentationFragment"
+        android:name="com.yektasarioglu.imagesegmentation.ui.StreamHumanBodySegmentationFragment"
+        android:label="StreamHumanBodySegmentationFragment" />
+</navigation>

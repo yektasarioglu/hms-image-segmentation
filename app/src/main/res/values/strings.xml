@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Image Segmentation</string>
+    <string name="select_image">Select Image</string>
+    <string name="analyze">Analyze</string>
+    <string name="enable_permissions_manually">Please enable permissions manually in the settings</string>
+    <string name="camera_permission_denied">You should give permission before proceeding it</string>
+    <string name="select_background_image">Select Background Image</string>
+</resources>
