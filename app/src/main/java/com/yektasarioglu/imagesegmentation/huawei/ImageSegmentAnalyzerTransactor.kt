@@ -30,7 +30,7 @@ class ImageSegmentAnalyzerTransactor(private val mOverlay: GraphicOverlay) : MLT
         val imageSegmentationResult = result.analyseList
         var bitmap = imageSegmentationResult.valueAt(0).getForeground()
         if (isFront) {
-            bitmap = convert(bitmap)
+            bitmap = flipImage(bitmap)
         }
         mOverlay.clear()
         val cameraImageGraphic = CameraImageGraphic(mOverlay, bitmap)
@@ -40,7 +40,7 @@ class ImageSegmentAnalyzerTransactor(private val mOverlay: GraphicOverlay) : MLT
 
     override fun destroy() { }
 
-    private fun convert(bitmap: Bitmap): Bitmap {
+    private fun flipImage(bitmap: Bitmap): Bitmap {
         val m = Matrix()
         m.setScale(-1f, 1f)
         return Bitmap.createBitmap(bitmap, 0, 0, bitmap.width, bitmap.height, m, true)

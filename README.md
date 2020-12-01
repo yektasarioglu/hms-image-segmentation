@@ -1,5 +1,5 @@
 # Human Body Image Segmentation Test App
-![Image Segmentation](https://img.shields.io/badge/asrVersion-2.0.4.300-blue)
+![Image Segmentation](https://img.shields.io/badge/imageSegmentationVersion-2.0.4.300-blue)
 
 <table align="center">
   <tr>
@@ -20,6 +20,6 @@ This test app contains two different use-case of **Human Body Image Segmentation
 
 Check the articles out for more.
 
-🤖**Static Image Segmentation**: [Wait, where is my background went?](https://medium.com/huawei-developers/the-robots-can-understand-us-now-c55a1ad073ac)
+🤖**Static Image Segmentation**: [Wait, where is my background went?](https://medium.com/huawei-developers/wait-where-is-my-background-went-8c41f99f2f2c)
 
-🤖**Camera Stream Image Segmentation**: [The one TTS app to rule them all](https://medium.com/huawei-developers/the-one-tts-app-to-rule-them-all-c2b75d26262f)
+🤖**Camera Stream Image Segmentation**: [Isn’t that nice background?](https://medium.com/@yektasarioglu/isnt-that-nice-background-3195d8b34ede)
