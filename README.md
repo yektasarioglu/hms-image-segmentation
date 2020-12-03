@@ -20,6 +20,6 @@ This test app contains two different use-case of **Human Body Image Segmentation
 
 Check the articles out for more.
 
-🤖**Static Image Segmentation**: [Wait, where is my background went?](https://medium.com/huawei-developers/wait-where-is-my-background-went-8c41f99f2f2c)
+🤖**Static Image Segmentation**: [Wait, where did my background go?](https://medium.com/huawei-developers/wait-where-is-my-background-went-8c41f99f2f2c)
 
-🤖**Camera Stream Image Segmentation**: [Isn’t that nice background?](https://medium.com/huawei-developers/isnt-that-nice-background-3195d8b34ede)
+🤖**Camera Stream Image Segmentation**: [Isn’t that a nice background?](https://medium.com/huawei-developers/isnt-that-nice-background-3195d8b34ede)
